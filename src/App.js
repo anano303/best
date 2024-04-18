@@ -4,6 +4,7 @@ import MainPage from './Pages/MainPage/Main';
 import Services from './Pages/Services/Services';
 import About from './Pages/About/About';
 import Contact from './Pages/Contact/Contact';
+import Layout from './components/Layout/Layout';
 
 import {  createBrowserRouter,
 createRoutesFromElements,
@@ -17,21 +18,27 @@ const router = createBrowserRouter(
     <>
       {/* <Route path="/signin" element={<SignIn />} />
       <Route path="/signup" element={<SignUp />} /> */}
+     
       <Route path="/" element={(
-      <MainPage/>
+      <Layout>
+        <MainPage/> 
+      </Layout>    
       )}
       />
+     
 
       <Route path="/services" element={(
-        <Services/>
+        <Layout><Services/></Layout>
+        
     
       )} />
        <Route path="/about" element={(
-        <About/>
+        <Layout><About/></Layout>
+        
     
       )} />
        <Route path="/contact" element={(
-        <Contact/>
+        <Layout><Contact/></Layout>
     
       )} />
 

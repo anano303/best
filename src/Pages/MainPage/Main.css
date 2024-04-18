@@ -1,0 +1,11 @@
+.MainCont {
+    /* height: 100vh;
+    width: 100%; */
+    background-color: rgb(253, 205, 135);
+    margin-top: -5px;
+}
+.MainCont img {
+    margin-left: 70px;
+    height: 500px;
+    width: 800px;
+}

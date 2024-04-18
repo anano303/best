@@ -1,0 +1,21 @@
+.NavCont {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 40px;
+  }
+  
+  .UlCont {
+    display: grid;
+    grid-auto-flow: column; 
+    grid-gap: 40px; 
+    list-style: none;
+  }
+  .UlCont li a {
+    text-decoration: none;
+    color: rgb(50, 37, 16);
+  }
+
+  .UlCont li a:hover {
+    color: rgb(105, 79, 34);
+  }
+  
