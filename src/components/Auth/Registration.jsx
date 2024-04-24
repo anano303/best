@@ -200,6 +200,9 @@ const RegistrationForm = () => {
       <button>
         <Link to="/">Back To Main</Link>
       </button>
+      <button>
+        <Link to="/login">Back To Log In</Link>
+      </button>
     </div>
   );
 };
