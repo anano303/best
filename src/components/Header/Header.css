@@ -1,46 +1,44 @@
 .headerMainDiv {
-width: 100%;
-background-color: rgb(212, 159, 58);
-color: rgb(80, 60, 25);
-text-shadow: 2px 1px 6px;
-box-shadow: 0px 3px 10px 5px;
-padding: 7px;
-position: relative;
-z-index: 1;
-
+  width: 100%;
+  background-color: rgb(212, 159, 58);
+  color: rgb(80, 60, 25);
+  text-shadow: 2px 1px 6px;
+  box-shadow: 0px 3px 10px 5px;
+  padding: 7px;
+  position: relative;
+  z-index: 1;
 }
-.LogoCont{
-    margin: 8px;
-    font-size: 24px;
-    display: flex;
-    gap: 10px;
+.LogoCont {
+  margin: 8px;
+  font-size: 24px;
+  display: flex;
+  gap: 10px;
 }
 .logo:hover {
-    cursor: pointer;
-    transform: scale(1.05);
-    transition: transform 0.2s ease;
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
 }
 
-p{
-    margin-top: 20px;
-    font-size: 20px;
+p {
+  margin-top: 20px;
+  font-size: 20px;
 }
-button {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    width: 70px;
-    background-color: rgb(212, 159, 58);
-    color:rgb(80, 60, 25);
-    font-weight: bold;
-    box-shadow: 0px 2px 10px 2px;
-    border: 0px solid rgb(80, 60, 25);
-    border-radius: 5px;
-    font-size: 12px;
-    padding: 2px;
-    cursor: pointer;
-    
+.headerButton {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  width: 70px;
+  background-color: rgb(212, 159, 58);
+  color: rgb(80, 60, 25);
+  font-weight: bold;
+  box-shadow: 0px 2px 10px 2px;
+  border: 0px solid rgb(80, 60, 25);
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 2px;
+  cursor: pointer;
 }
 button:hover {
-    background-color: #e6a218; 
+  background-color: #e6a218;
 }
