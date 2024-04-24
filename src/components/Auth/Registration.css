@@ -1,0 +1,47 @@
+/* styles.css */
+
+.registr {
+  background-color: #121212; /* Dark background color */
+  margin: 0; /* Remove default margin */
+  height: 100vh; /* Make sure the body fills the entire viewport height */
+  display: flex; /* Use flexbox */
+  flex-direction: column;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  color: yellow;
+}
+
+.registr .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.registr input {
+  margin: 10px 0; /* Add some vertical spacing between input fields */
+  width: 300px; /* Set the width of the input fields */
+  height: 40px; /* Set the height of the input fields */
+  padding: 10px; /* Add padding to the input fields */
+  border: 1px solid #ccc; /* Add a border to the input fields */
+  border-radius: 5px; /* Add border-radius to make input fields rounded */
+}
+
+.registr button {
+  margin-top: 10px; /* Add some spacing above the buttons */
+  width: 200px; /* Set the width of the buttons */
+  height: 50px; /* Set the height of the buttons */
+  background-color: #4caf50; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* Remove button border */
+  border-radius: 5px; /* Add border-radius to make buttons rounded */
+  cursor: pointer; /* Add cursor pointer on hover */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Add transition effect for background color and box-shadow */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add box-shadow for a subtle shadow effect */
+}
+
+.registr button:hover {
+  background-color: #45a049; /* Darken button background color on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Darken box-shadow on hover for a subtle lift effect */
+}
