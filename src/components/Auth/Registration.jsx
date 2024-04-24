@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { saveUserData } from "./Localstorage";
 import { useNavigate } from "react-router-dom";
 import "./Registration.css";
+import { Link } from "react-router-dom/dist";
 
 const RegistrationForm = () => {
   const navigate = useNavigate();
@@ -196,6 +197,9 @@ const RegistrationForm = () => {
       )}
       <br />
       <button onClick={handleRegistration}>Register</button>
+      <button>
+        <Link to="/">Back To Main</Link>
+      </button>
     </div>
   );
 };

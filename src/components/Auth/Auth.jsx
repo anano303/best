@@ -56,6 +56,9 @@ const AuthPage = () => {
         <Link to="/signup">Sign Up</Link>{" "}
       </button>
       {error && <p style={{ color: "red" }}>{error}</p>}
+      <button>
+        <Link to="/">Back To Main</Link>
+      </button>
     </div>
   );
 };
