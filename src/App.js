@@ -6,6 +6,7 @@ import Contact from "./Pages/Contact/Contact";
 import Layout from "./components/Layout/Layout";
 import Auth from "./components/Auth/Auth";
 import Registration from "./components/Auth/Registration";
+import Mypage from "./components/Auth/Mypage";
 
 import {
   createBrowserRouter,
@@ -19,6 +20,7 @@ const router = createBrowserRouter(
     <>
       <Route path="/login" element={<Auth />} />
       <Route path="/signup" element={<Registration />} />
+      <Route path="/mypage" element={<Mypage />} />
 
       <Route
         path="/"

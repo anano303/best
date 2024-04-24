@@ -1,21 +1,42 @@
+// AuthPage.jsx
+
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { saveUserData } from "../../Localstorage";
+import { getUserData } from "./Localstorage";
+import { useNavigate } from "react-router-dom/dist";
+import "./Auth.css";
 
 const AuthPage = () => {
+  const navigate = useNavigate();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
 
   const handleLogin = () => {
+    const storedUserData = getUserData("userData");
+
+    // Check if the username exists in localStorage
+    if (!storedUserData || !storedUserData.userName) {
+      setError("Username not found");
+      return;
+    }
+
+    // Check if the provided username and password match the stored data
+    if (
+      username !== storedUserData.userName ||
+      password !== storedUserData.password
+    ) {
+      setError("Incorrect username or password");
+      return;
+    }
+
     // Perform authentication logic here
-    // For simplicity, let's just log the username and password for now
-    console.log("Username:", username);
-    console.log("Password:", password);
-    saveUserData("userData", { username, password });
+    console.log("Authentication successful");
+    navigate("/mypage");
   };
 
   return (
-    <div>
+    <div className="auth">
       <h2>Login</h2>
       <input
         type="text"
@@ -34,6 +55,7 @@ const AuthPage = () => {
         {" "}
         <Link to="/signup">Sign Up</Link>{" "}
       </button>
+      {error && <p style={{ color: "red" }}>{error}</p>}
     </div>
   );
 };
