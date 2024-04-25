@@ -32,7 +32,7 @@ const RegistrationForm = () => {
     } else {
       const today = new Date();
       const birthdateDate = new Date(birthdate);
-      const age = today.getFullYear() - birthdateDate.getFullYear();
+      let age = today.getFullYear() - birthdateDate.getFullYear();
       const month = today.getMonth() - birthdateDate.getMonth();
       if (
         month < 0 ||
