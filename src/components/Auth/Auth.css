@@ -19,6 +19,11 @@
   justify-content: center;
   text-align: center;
 }
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .auth input {
   margin: 10px 0; /* Add some vertical spacing between input fields */
